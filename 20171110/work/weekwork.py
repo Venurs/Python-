@@ -48,11 +48,3 @@ while True:
         else:
             put_money = int(input("下注金额为50的倍数，玩家请重新下注："))
 
-
-
-
-
-
-
-
-

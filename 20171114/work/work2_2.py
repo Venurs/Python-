@@ -46,22 +46,52 @@ print("----------------1.添加学生-----------")
 print("----------------2.删除学生-----------")
 print("----------------3.修改学生-----------")
 print("----------------4查找学生-----------")
-print("----------------5.退出-----------")
+print("----------------5.查看所有学生-----------")
+print("----------------6.退出-----------")
+student = []
 while True:
     choose = int(input("请选择："))
-    dict1 = dict()
     if choose == 1:
-        name = input("请输入学生姓名：")
-        age = int(input("请输入学生年龄："))
-        qq_number = input("请输入QQ号码：")
-
+        name_student = input("请输入学生姓名：")
+        age_student = int(input("请输入学生年龄："))
+        qq_number_student = input("请输入QQ号码：")
+        student.append(dict(name=name_student, age=age_student, qq_number=qq_number_student))
+        print("添加成功")
     elif choose == 2:
-        pass
+        name_student = input("请输入要删除的学生的名字：")
+        for stu in student:
+            if stu["name"] == name_student:
+                print(type(stu))
+                student.remove(stu)
+                print("删除成功")
     elif choose == 3:
-        pass
+        name_student = input("请输入要修改的学生的姓名：")
+        print("1.修改姓名")
+        print("2.修改年龄")
+        print("3.修改QQ号码")
+        select = int(input("请输入要修改的信息编号："))
+        for stu in student:
+            if stu["name"] == name_student:
+                if select == 1:
+                    new_name = input("请输入新名字：")
+                    stu["name"] = new_name
+                elif select == 2:
+                    new_age = int(input("请输入新的年龄："))
+                    stu["age"] = new_age
+                elif select == 3:
+                    new_qq = input("请输入新的QQ号码：")
+                    stu["qq_number"] = new_qq
+            print("修改成功")
     elif choose == 4:
-        pass
+        name_student = input("请输入要查找的学生的名字：")
+        for stu in student:
+            if stu["name"] == name_student:
+                print(stu)
     elif choose == 5:
+        for stu in student:
+            print(stu)
+    elif choose == 6:
+        print("系统退出")
         break
 
 
