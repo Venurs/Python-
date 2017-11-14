@@ -1,0 +1,49 @@
+第一部分：
+消化课堂代码
+笔记
+
+第二部分：
+1.ECALIYHWEQAEFSZCVZTWEYXCPIURVCSWTDBCIOYXGTEGDTUMJHUMBJKHFGUKNKN
+每个字母出现的次数
+	提示：字典{字母：count}
+
+
+第三部分：
+使用字典：学生管理系统
+学生姓名管理系统：
+    names_list = ["王二狗", "Rose", "Jack" ...]
+    增加学生姓名，删除，修改，查找。。
+        append(),
+        pop(index),remove(元素)
+        name_list[index] = 新值
+        
+字典：存储一组信息
+    names_list = [
+        {
+            "name": "王二狗",
+            "age" : 18,
+            "QQ": "1234567"
+        },
+        {
+            "name":"Rose",
+            "age":19,
+            "QQ":"567878"
+        },
+        .....
+    ]
+        
+        
+        新增学生信息：
+        
+            创建字典：stu_dict = {}
+                接收姓名，年龄，QQ
+                    stu_dict["name"] = 姓名
+                    stu_dict["age"] = 18
+                    stu_dict["QQ"] = "12345"
+            names_list.append(stu_dict)
+            
+            删除：del_name = "王二狗"
+            
+            修改：
+            
+            查找：

@@ -4,7 +4,9 @@
 """
 
 str1 = "ABCDEFGHIJK"
-for i in range(0, len(str1) - 1):
+for i in range(0, len(str1)):
     for j in range(i, i + 9):
-        print(str1[i:j], end=" ")
+        if j <= len(str1):
+            print(str1[i:j], end=" ")
+
     print()
