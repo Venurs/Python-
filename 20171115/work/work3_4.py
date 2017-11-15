@@ -5,6 +5,11 @@ import time
 
 
 def Fiboone(i):
+    """
+    递归产生菲波那切数列
+    :param i: 数列的第i个
+    :return:
+    """
     if i == 1 or i == 2:
         return 1
     else:

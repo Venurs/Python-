@@ -4,6 +4,11 @@
 
 
 def days(month):
+    """
+    求月份截止天数
+    :param month: 截止月份
+    :return: 天数
+    """
     day_big = (1, 3, 5, 7, 8, 10, 12)
     day_small = (4, 6, 9, 11)
     day = 0

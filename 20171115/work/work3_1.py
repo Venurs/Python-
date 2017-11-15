@@ -31,6 +31,12 @@ def gcd(num1, num2):
 
 
 def lcm(num1, num2):
+    """
+    求最小公倍数
+    :param num1:
+    :param num2:
+    :return: 最小公倍数
+    """
     gcd_number = gcd(num1, num2)
     return num1 * num2 // gcd_number
 

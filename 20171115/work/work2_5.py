@@ -5,6 +5,12 @@
 
 
 def get_max(num1, num2):
+    """
+    返回最大数
+    :param num1:
+    :param num2:
+    :return: 最大值
+    """
     if num1 > num2:
         return num1
     else:
