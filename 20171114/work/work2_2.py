@@ -64,6 +64,8 @@ while True:
                 print(type(stu))
                 student.remove(stu)
                 print("删除成功")
+        else:
+            print("该学生不存在。。。。")
     elif choose == 3:
         name_student = input("请输入要修改的学生的姓名：")
         print("1.修改姓名")

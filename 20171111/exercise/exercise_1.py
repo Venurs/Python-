@@ -35,8 +35,3 @@ def produce_su():
         count += 1
     return num1_list
 
-
-if __name__ == "__main__":
-    for i in produce_su():
-        print(i)
-
