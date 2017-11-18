@@ -4,16 +4,22 @@
 # 判断一个数列中的所有质数
 
 
-def choose(n):
-    return lambda x: x % n > 0
-
-
 def is_prime(n):
-    return list(filter(choose(n), list1[1:]))
+    """
+    判断是不是质数
+    :param n: 要判断的数
+    :return: 无返回值
+    """
+    for i in range(2, (n // 2) + 1):
+        if n % i == 0:
+            return False
+    else:
+        return True
 
 
-num1 = int(input())
-num2 = int(input())
-list1 = [x for x in range(num1 + 1, num2 + 1)]
-print(list1)
-print(is_prime(list1[0]))
+num1 = int(input("第一个数："))
+num2 = int(input("第二个数："))
+print(tuple(filter(is_prime, [x for x in range(num1, num2 + 1)])))
+print(sum((filter(is_prime, [x for x in range(num1, num2 + 1)]))))
+
+
